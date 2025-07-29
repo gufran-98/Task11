@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap style-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!--Font awseam-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!--Favicon-->
+    <link rel="icon" href="assets/img/banner-bg.png">
+
+
+    <!--style-->
+
+    <link rel="stylesheet" href="assets/style/style.css">
+
+    <title>Glow Up Store</title>
+</head>
+
+<body>
+    <!--nav area-->
+
+    <nav class="navbar fixed-top navbar-expand-lg  ">
+        <div class="container">
+
+            <!-- Start Logo Area-->
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/cover1.jpg" class="rounded-5" width="50" height="50"></a>
+            <!--End logo area-->
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--Start List area-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="assets/pages/about.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="assets/pages/contactus.html">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                </ul>
+
+            </div>
+            <a class="nav-link" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                aria-controls="offcanvasExample">
+                <div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </a>
+        </div>
+    </nav><!--End nav area-->
+
+    <!-- Start Carousel area-->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+
+            <!--Start img area-->
+            <div class="carousel-item active">
+                <img src="assets/img/cover1.jpg" class="d-block w-100">
+            </div>
+
+            <div class="carousel-item">
+                <img src="assets/img/banner-bg.png" class="d-block w-100">
+            </div>
+        </div>
+    </div>
+
+    <!--End img area-->
+
+    <!-- start button area-->
+    <button class="carousel-control-prev carousel-btn" type="button" data-bs-target="#carouselExampleFade"
+        data-bs-slide="prev">
+
+        <i class="fa-solid fa-angles-left myicon"></i>
+        <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next carousel-btn" type="button" data-bs-target="#carouselExampleFade"
+        data-bs-slide="next">
+        <i class="fa-solid fa-angles-right myicon"></i>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div><!--End button area-->
+
+    <section id="products" class=" text-center mt-4">
+        <div class="d-flex justify-content-center">
+            <h2 class="text-head pb-2">Products</h2>
+        </div>
+        <div class="btn-center mb-5 mt-3">
+            <button class="btn btn-primary m-2 filter-btn" onclick="filterProducts('all')">ALL</button>
+            <button class="btn btn-primary m-2 filter-btn" onclick="filterProducts('bestseller')">Bestseller</button>
+            <button class="btn btn-primary m-2 filter-btn" onclick="filterProducts('features')">Features</button>
+            <button class="btn btn-primary m-2 filter-btn" onclick="filterProducts('new')">New</button>
+        </div>
+
+        <!-- fashion section start -->
+        <div class="fashion_section">
+            <div id="main_slider" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <h1 class="fashion_taital">Hells</h1>
+                            <div class="fashion_section_2">
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-4">
+                                        <div class="box_main new" data-name="Stiletto Heels" data-price="450"
+                                            data-img="assets/img/img1.png">
+                                            <h4 class="hells_text">Stiletto Heels </h4>
+                                            <p class="price_text">Price <span style="color: #262626;">650 LE</span></p>
+                                            <div class="hells_img"><img src="assets/img/img1.png"></div>
+                                            <div class="btn_main">
+                                                <div class="buy_bt"><a href="#" data-bs-toggle="modal"
+                                                        data-bs-target="#buyNowModal"
+                                                        onclick="showProductInModal(this)">Buy Now</a></div>
+                                                <div class="add_bt"><a href="#"
+                                                        onclick="addToCartSimple(this);return false;">Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4">
+                                        <div class="box_main new" data-name="Peep Toe Heels" data-price="800"
+                                            data-img="assets/img/img2.png">
+                                            <h4 class="hells_text">Peep Toe Heels</h4>
+                                            <p class="price_text">Price <span style="color: #262626;">800 LE</span></p>
+                                            <div class="hells_img"><img src="assets/img/img2.png"></div>
+                                            <div class="btn_main">
+                                                <div class="buy_bt"><a href="#" data-bs-toggle="modal"
+                                                        data-bs-target="#buyNowModal"
+                                                        onclick="showProductInModal(this)">Buy Now</a></div>
+                                                <div class="add_bt"><a href="#"
+                                                        onclick="addToCartSimple(this);return false;">Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4">
+                                        <div class="box_main features" data-name="Kitten Heels" data-price="750"
+                                            data-img="assets/img/img3.png">
+                                            <h4 class="hells_text">Kitten Heels</h4>
+                                            <p class="price_text"> Price <span style="color: #262626;">750 LE</span></p>
+                                            <div class="hells_img"><img src="assets/img/img3.png"></div>
+                                            <div class="btn_main">
+                                                <div class="buy_bt"><a href="#" data-bs-toggle="modal"
+                                                        data-bs-target="#buyNowModal"
+                                                        onclick="showProductInModal(this)">Buy Now</a></div>
+                                                <div class="add_bt"><a href="#"
+                                                        onclick="addToCartSimple(this);return false;">Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- end container -->
+                    </div> <!-- end carousel-item -->
+                </div> <!-- end carousel-inner -->
+            </div> <!-- end main_slider -->
+        </div> <!-- end fashion_section -->
+
+
+
+        <!-- jewellery section start -->
+        <div class="jewellery_section">
+            <div id="jewellery_main_slider" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <h1 class="fashion_taital">Jewellery Accessories</h1>
+                            <div class="fashion_section_2">
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-4">
+                                        <div class="box_main bestseller" data-name="Signet Ring" data-price="750"
+                                            data-img="assets/img/img4.png">
+                                            <h4 class="jewee_text">Signet Ring</h4>
+                                            <p class="price_text"> Price <span style="color: #262626;">500 LE</span></p>
+                                            <div class="jewellery_img"><img src="assets/img/img4.png"></div>
+                                            <div class="btn_main">
+                                                <div class="buy_bt"><a href="#" data-bs-toggle="modal"
+                                                        data-bs-target="#buyNowModal"
+                                                        onclick="showProductInModal(this)">Buy Now</a></div>
+                                                <div class="add_bt"><a href="#"
+                                                        onclick="addToCartSimple(this);return false;">Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4">
+                                        <div class="box_main bestseller" data-name="Tennis Bracelet" data-price="450"
+                                            data-img="assets/img/img5.png">
+                                            <h4 class="jewee_text">Tennis Bracelet</h4>
+                                            <p class="price_text"> Price <span style="color: #262626;">450 LE</span></p>
+                                            <div class="jewellery_img"><img src="assets/img/img5.png"></div>
+                                            <div class="btn_main">
+                                                <div class="buy_bt"><a href="#" data-bs-toggle="modal"
+                                                        data-bs-target="#buyNowModal"
+                                                        onclick="showProductInModal(this)">Buy Now</a></div>
+                                                <div class="add_bt"><a href="#"
+                                                        onclick="addToCartSimple(this);return false;">Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4">
+                                        <div class="box_main" data-name="Kangans" data-price="600"
+                                            data-img="assets/img/img6.png">
+                                            <h4 class="jewee_text">Kangans</h4>
+                                            <p class="price_text"> Price <span style="color: #262626;">600 LE</span></p>
+                                            <div class="jewellery_img"><img src="assets/img/img6.png"></div>
+                                            <div class="btn_main">
+                                                <div class="buy_bt"><a href="#" data-bs-toggle="modal"
+                                                        data-bs-target="#buyNowModal"
+                                                        onclick="showProductInModal(this)">Buy Now</a></div>
+                                                <div class="add_bt"><a href="#"
+                                                        onclick="addToCartSimple(this);return false;">Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- end container -->
+                    </div> <!-- end carousel-item -->
+                </div> <!-- end carousel-inner -->
+            </div> <!-- end jewellery_main_slider -->
+        </div> <!-- end jewellery_section -->
+
+
+        <div class="bags_section">
+            <div id="bags_main_slider" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <h1 class="bag_taital">New Bag</h1>
+                            <div class="fashion_section_2">
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-4">
+                                        <div class="box_main bestseller" data-name="Louis Vuitton" data-price="500 "
+                                            data-img="assets/img/bag1.png">
+                                            <h4 class="bag_text">Louis Vuitton</h4>
+                                            <p class="price_text"> Price <span style="color: #262626;">500 LE</span></p>
+                                            <div class="bag_img"><img src="assets/img/bag1.png"></div>
+                                            <div class="btn_main">
+                                                <div class="buy_bt"><a href="#" data-bs-toggle="modal"
+                                                        data-bs-target="#buyNowModal"
+                                                        onclick="showProductInModal(this)">Buy Now</a></div>
+                                                <div class="add_bt"><a href="#"
+                                                        onclick="addToCartSimple(this);return false;">Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4">
+                                        <div class="box_main bestseller" data-name="Clutch" data-price="450"
+                                            data-img="assets/img/bag2.png">
+                                            <h4 class="bag_text">Clutch</h4>
+                                            <p class="price_text"> Price <span style="color: #262626;">450 LE</span></p>
+                                            <div class="bag_img"><img src="assets/img/bag2.png"></div>
+                                            <div class="btn_main">
+                                                <div class="buy_bt"><a href="#" data-bs-toggle="modal"
+                                                        data-bs-target="#buyNowModal"
+                                                        onclick="showProductInModal(this)">Buy Now</a></div>
+                                                <div class="add_bt"><a href="#"
+                                                        onclick="addToCartSimple(this);return false;">Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4">
+                                        <div class="box_main" data-name="Satchel" data-price="600"
+                                            data-img="assets/img/bag3.png">
+                                            <h4 class="jewee_text">Satchel</h4>
+                                            <p class="price_text"> Price <span style="color: #262626;">600 LE</span></p>
+                                            <div class="bag_img"><img src="assets/img/bag3.png"></div>
+                                            <div class="btn_main">
+                                                <div class="buy_bt"><a href="#" data-bs-toggle="modal"
+                                                        data-bs-target="#buyNowModal"
+                                                        onclick="showProductInModal(this)">Buy Now</a></div>
+                                                <div class="add_bt"><a href="#"
+                                                        onclick="addToCartSimple(this);return false;">Add to cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!--end bag section-->
+
+        <!-- Modal-->
+        <div class="modal fade" id="buyNowModal" tabindex="-1" aria-labelledby="buyNowLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="buyNowLabel">Chekout</h5>
+                    </div>
+
+                    <div class="modal-body">
+                        <p id="emptyCartMessage" class="text-danger fw-bold d-none">عذرًا، لا توجد منتجات لشرائها.</p>
+                        <p id="modalProductName" class="fw-bold"></p>
+                        <p id="modalProductPrice"></p>
+                        <form id="purchaseForm">
+                            <input type="text" name="username"  class="form-control mb-2" placeholder="Name" required
+                                pattern="[A-Za-zأ-ي\s]+">
+                            <input type="text" name="address" class="form-control mb-2" placeholder="Address" pattern="[A-Za-zأ-ي\s]+"
+                                title="Enter text only" required>
+                            <input type="tel" name="phone" class="form-control mb-2" placeholder="Phone number" pattern="[0-9]{11}"
+                                inputmode="numeric" required title="Enter 11 num">
+                            <input type="number" name="price" id="priceInput" class="form-control mb-2" placeholder="Price" required readonly>
+                            <button type="submit" id="confirmBtn" class="btn btn-success ">Checkout</button>
+                              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><!--end modal area-->
+
+
+        <!--Offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Orders</h5>
+            </div>
+            <div class="offcanvas-body">
+                <div class="cart-items-container">
+                </div>
+                <p id="total-price" class="fw-bold text-center mt-3">Total: 0 LE</p>
+                <div class="d-flex justify-content-center gap-3 mb-3">
+                    <button onclick="clearCart()" class="btn btn-danger">Clear cart</button>
+                    <button id="buy-now" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#buyNowModal">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <!--End offcanves area-->
+
+
+        <!--Footer section-->
+        <footer class="footer-bar border-top py-3 mt-5">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center">
+                <div class="col-md-4 d-flex align-items-center">
+                    <span class="txt-foot mb-3 mb-md-0 text-muted">&copy; 2025, All Rights Reserved</span>
+                </div>
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex mb-0 ">
+                    <li class="ms-3"><a class="text-muted " href="#"><i
+                                class="fa-brands fa-facebook icon-brand"></i></a></li>
+                    <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-linkedin icon-brand"></i></a>
+                    </li>
+                    <li class="ms-3"><a class="text-muted " href="#"><i
+                                class="fa-brands fa-x-twitter icon-brand"></i></a></li>
+                </ul>
+            </div>
+        </footer><!--End footer section-->
+
+
+
+
+
+
+        <!--script area-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+            </script>
+        <script src="assets/js/main.js"></script>
+</body>
+
+</html>
